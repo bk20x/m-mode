@@ -1,7 +1,7 @@
 (defvar m-keywords
   '("load" "open" "define" "macro" "let" "let*" "if"
     "each" "interned-symbols" "setf" "setq" "->" "doTimes" "macroexpand" "safe"
-    "who" "return")
+    "who" "return" "while")
   "Special forms for M.")
 
 (defvar m-font-lock-defaults
