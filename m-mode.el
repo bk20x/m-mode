@@ -1,8 +1,8 @@
 (defvar m-keywords
   '("load" "open" "define" "macro" "let" "let*" "if"
-    "each" "interned-symbols" "setf" "setq" "->" "doTimes" "macroexpand" "safe"
-    "who" "return" "while")
-  "Special forms for M.")
+    "each" "interned-symbols" "setf" "setq" "setb" "setp" "->" "doTimes" "macroexpand" "safe"
+    "who" "return" "while" "echo")
+  "Special forms/core builtins for M.")
 
 (defvar m-font-lock-defaults
   `(((,(regexp-opt m-keywords 'symbols) . font-lock-keyword-face)
@@ -11,7 +11,7 @@
 )))
 
 ;;;###autoload
-(define-derived-mode m-mode lisp-mode "M"
+(define-derived-mode m-mode nil "M"
   "Major mode for editing M source files."
   (setq font-lock-defaults m-font-lock-defaults))
 
