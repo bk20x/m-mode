@@ -1,5 +1,5 @@
 (defvar m-keywords
-  '("load" "open" "define" "macro" "let" "let*" "if"
+  '("load" "open" "define" "macro" "let" "let*" "if" "car" "cdr"
     "each" "interned-symbols" "setf" "setq" "setb" "setp" "->" "doTimes" "macroexpand" "safe"
     "who" "return" "while" "echo")
   "Special forms/core builtins for M.")
